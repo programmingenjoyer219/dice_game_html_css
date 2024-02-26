@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+html {
+  background-color: #2D3250;
+}
+
+.player_view {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 20px;
+}
+
+h2, footer {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-style: normal;
+  color: #F6B17A;
+}
+
+h1 {
+  font-family: "Lobster", sans-serif;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #F6B17A;
+}
+
+img {
+  height: 256px;
+  padding: 25px;
+  border: 10px dashed #7077A1;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 20px; /* Adjust spacing for smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .player_view {
+    flex-direction: column; /* Stack player views vertically on smaller screens */
+    align-items: center;
+  }
+
+  img {
+    height: 150px; /* Reduce image size for smaller screens */
+    padding: 10px;
+    border-width: 5px;
+  }
+}
